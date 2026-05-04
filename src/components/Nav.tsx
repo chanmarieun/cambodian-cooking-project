@@ -6,10 +6,10 @@ import { useState } from 'react'
 
 const links = [
   { href: '/recipes', label: 'Recipes' },
-  { href: '/events', label: 'Events' },
-  { href: '/blog', label: 'Stories' },
-  { href: '/about', label: 'About' },
+  { href: '/events', label: 'Calendar' },
+  { href: '/blog', label: 'Blog' },
   { href: '/ask', label: 'Ask Us' },
+  { href: '/about', label: 'About' },
 ]
 
 export default function Nav() {

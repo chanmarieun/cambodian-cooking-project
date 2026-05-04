@@ -1,5 +1,6 @@
 ---
-title: Amok Trey (Fish Amok)
+title: Amok Trey
+titleKhmer: អាម៉ុកត្រី
 slug: amok-trey
 description: Cambodia's most iconic dish — a fragrant, creamy fish curry steamed in banana leaf cups. Rich with coconut milk and kroeung paste.
 image: ""
@@ -7,16 +8,24 @@ tags: [curry, fish, steamed, classic]
 author: Chan Marie Un
 date: "2026-01-15"
 ingredients:
-  - 500g firm white fish (snakehead or tilapia), sliced
-  - 400ml coconut milk
-  - 3 tbsp kroeung paste (see note)
-  - 2 eggs, beaten
-  - 2 tbsp fish sauce
-  - 1 tsp palm sugar
-  - 4–6 banana leaf cups (or ramekins)
-  - 1 cup fresh spinach or noni leaves
-  - Kaffir lime leaves, thinly sliced, to garnish
-  - Red chili, sliced, to garnish
+  meats:
+    - 500g firm white fish (snakehead or tilapia), sliced
+  produce:
+    - 4–6 banana leaves (for cups)
+    - 1 cup fresh spinach or noni leaves
+    - Kaffir lime leaves, thinly sliced, to garnish
+    - 1–2 red chilies, sliced, to garnish
+  pantry:
+    - 400ml coconut milk
+    - 3 tbsp kroeung paste
+    - 2 eggs, beaten
+    - 2 tbsp fish sauce
+    - 1 tsp palm sugar
+equipment:
+  - Steamer or large pot with steaming rack
+  - Mixing bowl
+  - Banana leaf cups (or small ramekins)
+  - Toothpicks or stapler for banana leaf cups
 steps:
   - Make or prepare kroeung paste by blending together lemongrass, galangal, kaffir lime zest, turmeric, garlic, shallots, and dried chilies into a smooth paste.
   - In a bowl, combine coconut milk, kroeung paste, fish sauce, palm sugar, and beaten eggs. Mix well until smooth.

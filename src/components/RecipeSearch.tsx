@@ -11,7 +11,15 @@ export default function RecipeSearch({ recipes }: { recipes: Recipe[] }) {
   const fuse = useMemo(
     () =>
       new Fuse(recipes, {
-        keys: ['title', 'description', 'tags', 'ingredients'],
+        keys: [
+          'title',
+          'titleKhmer',
+          'description',
+          'tags',
+          'ingredients.meats',
+          'ingredients.produce',
+          'ingredients.pantry',
+        ],
         threshold: 0.35,
       }),
     [recipes]

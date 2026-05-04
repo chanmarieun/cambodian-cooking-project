@@ -7,9 +7,15 @@ const recipesDir = path.join(process.cwd(), 'content/recipes')
 export type Recipe = {
   slug: string
   title: string
+  titleKhmer: string
   description: string
   image: string
-  ingredients: string[]
+  ingredients: {
+    meats: string[]
+    produce: string[]
+    pantry: string[]
+  }
+  equipment: string[]
   steps: string[]
   tags: string[]
   author: string
@@ -28,9 +34,15 @@ export function getAllRecipes(): Recipe[] {
       return {
         slug,
         title: data.title ?? '',
+        titleKhmer: data.titleKhmer ?? '',
         description: data.description ?? '',
         image: data.image ?? '',
-        ingredients: data.ingredients ?? [],
+        ingredients: {
+          meats: data.ingredients?.meats ?? [],
+          produce: data.ingredients?.produce ?? [],
+          pantry: data.ingredients?.pantry ?? [],
+        },
+        equipment: data.equipment ?? [],
         steps: data.steps ?? [],
         tags: data.tags ?? [],
         author: data.author ?? '',

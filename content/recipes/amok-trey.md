@@ -5,7 +5,7 @@ slug: amok-trey
 description: Cambodia's most iconic dish — a fragrant, creamy fish curry steamed in banana leaf cups. Rich with coconut milk and kroeung paste.
 image: ""
 tags: [curry, fish, steamed, classic]
-author: Chan Marie Un
+author: Chan Un
 date: "2026-01-15"
 ingredients:
   meats:

@@ -5,7 +5,7 @@ slug: bai-sach-chrouk
 description: A beloved Cambodian breakfast — thin slices of pork marinated in garlic and coconut milk, grilled over charcoal, served over broken rice with pickled vegetables.
 image: ""
 tags: [pork, rice, breakfast, grilled, quick]
-author: Chan Marie Un
+author: Chan Un
 date: "2026-02-01"
 ingredients:
   meats:

@@ -97,7 +97,7 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
           >
             HELLA
             <br />
-            ឆ្ងាញ់
+            <span style={{ fontWeight: 900, WebkitTextStroke: '1.5px black' }}>ឆ្ងាញ់</span>
           </p>
         </div>
       )}

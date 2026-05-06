@@ -1,7 +1,7 @@
 ---
 title: Why We Cook
 slug: why-we-cook
-author: Chan Marie Un
+author: Chan Un
 date: "2026-05-01"
 description: On starting the Cambodian Cooking Collective — and why food is the way I have chosen to hold onto a culture that almost didn't survive.
 image: ""

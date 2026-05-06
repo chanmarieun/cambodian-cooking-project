@@ -1,8 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-stone-200 mt-20 py-10 text-center text-sm text-stone-400">
-      <p>© {new Date().getFullYear()} Cambodian Cooking Collective</p>
-      <p className="mt-1">Made with love for our community</p>
+    <footer className="w-full px-8 py-6 text-center">
+      <p className="text-[11px] uppercase tracking-widest text-black/40">
+        © {new Date().getFullYear()} Cambodian Cooking Collective
+      </p>
     </footer>
   )
 }

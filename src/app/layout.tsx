@@ -1,10 +1,15 @@
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
+import { Space_Mono } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-const geist = Geist({ subsets: ['latin'] })
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-mono',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Cambodian Cooking Collective',
@@ -13,8 +18,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${geist.className} h-full`}>
-      <body className="bg-stone-50 text-stone-900 antialiased min-h-full flex flex-col">
+    <html lang="en" className={`${spaceMono.variable} h-full`}>
+      <body className={`${spaceMono.className} antialiased min-h-full flex flex-col bg-white text-black`}>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

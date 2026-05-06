@@ -67,7 +67,7 @@ export default function Nav() {
           >
             <Link href="/">
               <Image
-                src="/logo/HELLA ឆ្ងាញ់.png"
+                src="/logo/hella-logo.png"
                 alt="Cambodian Cooking Collective"
                 width={90}
                 height={40}
@@ -95,7 +95,7 @@ export default function Nav() {
         <div className="flex md:hidden items-center justify-between">
           <Link href="/" style={{ opacity: showLogo ? 1 : 0, transition: 'opacity 0.35s ease', pointerEvents: showLogo ? 'auto' : 'none' }}>
             <Image
-              src="/logo/HELLA ឆ្ងាញ់.png"
+              src="/logo/hella-logo.png"
               alt="Cambodian Cooking Collective"
               width={70}
               height={30}

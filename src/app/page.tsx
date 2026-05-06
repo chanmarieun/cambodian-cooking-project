@@ -4,9 +4,16 @@ import { useState, useEffect } from 'react'
 import Preloader from '@/components/Preloader'
 import KhmerWordSection from '@/components/KhmerWordSection'
 import MissionSection from '@/components/MissionSection'
+import LiveClock from '@/components/LiveClock'
 
 export default function HomePage() {
   const [preloaderDone, setPreloaderDone] = useState(false)
+
+  useEffect(() => {
+    if (sessionStorage.getItem('preloaderShown')) {
+      setPreloaderDone(true)
+    }
+  }, [])
   const [scrollProgress, setScrollProgress] = useState(0)
 
   useEffect(() => {
@@ -20,7 +27,12 @@ export default function HomePage() {
 
   return (
     <>
-      {!preloaderDone && <Preloader onComplete={() => setPreloaderDone(true)} />}
+      {!preloaderDone && (
+        <Preloader onComplete={() => {
+          sessionStorage.setItem('preloaderShown', '1')
+          setPreloaderDone(true)
+        }} />
+      )}
 
       {/* Hero */}
       <div
@@ -45,6 +57,9 @@ export default function HomePage() {
             Cambodian Cooking Collective
           </p>
         </div>
+
+        {/* Live clock — bottom left */}
+        <LiveClock />
 
         {/* Social icons — bottom right */}
         <div className="absolute bottom-8 right-8 flex items-center gap-5">

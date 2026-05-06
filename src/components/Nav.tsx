@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
+
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 
@@ -66,12 +66,10 @@ export default function Nav() {
             }}
           >
             <Link href="/">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/logo/hella-logo.png"
                 alt="Cambodian Cooking Collective"
-                width={90}
-                height={40}
-                className="object-contain"
                 style={{ height: '32px', width: 'auto' }}
               />
             </Link>
@@ -94,12 +92,10 @@ export default function Nav() {
         {/* Mobile */}
         <div className="flex md:hidden items-center justify-between">
           <Link href="/" style={{ opacity: showLogo ? 1 : 0, transition: 'opacity 0.35s ease', pointerEvents: showLogo ? 'auto' : 'none' }}>
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/logo/hella-logo.png"
               alt="Cambodian Cooking Collective"
-              width={70}
-              height={30}
-              className="object-contain"
               style={{ height: '24px', width: 'auto' }}
             />
           </Link>
